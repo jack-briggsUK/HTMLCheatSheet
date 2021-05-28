@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Briggs HTML Cheatsheet</title>
+        <link rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+
+    <header>
+        <h1>Briggs' HTML Cheatsheet</h1>
+    </header>
+
+    <body>
+        <p class="info">
+            This Cheatsheet is designed to help remind the user of the basic boilerplate code for HTML and CSS
+        </p>
+        <h2>HTML</h2>
+        <h3>The first few lines</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="code">&lt;!DOCTYPE html&gt;</span>
+                    </td>
+                    <td>Document Type</td>
+                    <td>Written on line 1, this tag informs the browser that the file is HTML.</td>
+                </tr>
+                <tr>
+                    <td> 
+                        <span class="code">&lt;html&gt;</span>
+                    </td>
+                    <td>Code to be parsed</td>
+                    <td>Everything inbetween the html tags will be interprested by the browser</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;head&gt;</span>
+                    </td>
+                    <td>Document metadata</td>
+                    <td>
+                        This is where the pages metadata is stored.<br>
+                        e.g. <span class="code">&lt;title&gt;</span> will display the text between tags in the browser tab.<br>
+                        <span class="code">&lt;link rel="stylesheet" href="URL" type="text/css"&gt;</span> will apply the CSS format of the linked file.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>The main event</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <span class="code">&lt;header&gt;</span>
+                    </td>
+                    <td>Document header</td>
+                    <td>Identifies the code between tags as the document header</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;body&gt;</span>
+                    </td>
+                    <td>Document body</td>
+                    <td>Identifies the code between tags as the body of the document</td>
+                </tr>
+                <tr>
+                    <td>
+                        <span class="code">&lt;footer&gt;</span>
+                    </td>
+                    <td>Document footer</td>
+                    <td>Identifies the code between the tags as the document footer</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>CSS</h2>
+        <h3>Targeting</h3>
+        <table>
+            <thead>
+                <tr>
+                    <td>Specificity</td>
+                    <td>Target</td>
+                    <td>Code</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Highest - 1</td>
+                    <td>ID Selector</td>
+                    <td>
+                        <span class="code">#example</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Class selector</td>
+                    <td>
+                        <span class="code">.example</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lowest - 3</td>
+                    <td>Type selector</td>
+                    <td>
+                        <span class="code">h1</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3 id="Emphasize">Styling</h3>
+        <p>Below is a few examples that are included in the CSS for this page</p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Target</td>
+                    <td>Code</td>
+                    <td>Description</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>html</td>
+                    <td>
+                        {<br>
+                        background-color: snow;<br>
+                        font-family: Helvetica, Arial, sans-serif;<br>
+                        }
+                    </td>
+                    <td>
+                        Sets the background colour for the entire page<br>
+                        Sets the font *multiple fonts are included to increase capatability*.
+                    </td>
+                </tr>
+                <tr>
+                    <td>h1</td>
+                    <td>
+                        {<br>
+                        background-image: url(./file in root);<br>
+                        color: powderblue;<br>
+                        font-size: 60px;<br>
+                        text-align: center;<br>
+                        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;<br>
+                        }
+                    </td>
+                    <td>
+                        Sets the background image to a file in the .root directory.<br>
+                        Sets the colour of the font.<br>
+                        Sets the size of the font.<br>
+                        Aligns the font on the page.<br>
+                        Adds a border to the text.<br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>h2</td>
+                    <td>
+                        {<br>
+                        background-color: powderblue<br>
+                        }
+                    </td>
+                    <td>Sets the background colour.</td>
+                </tr>
+                <tr>
+                    <td>table</td>
+                    <td>
+                        {<br>
+                        border-collapse: collapse;<br>
+                        }
+                    </td>
+                    <td>
+                    Collapses the gap between the &lt;thead&gt; and &lt;tbody&gt; sections.
+                    </td>
+                </tr>
+                <tr>
+                    <td>thead</td>
+                    <td>
+                        {<br>
+                            background-color: skyblue;<br>
+                            text-align: center;<br>
+                        }
+                    </td>
+                    <td>
+                        Sets the background colour.<br>
+                        Aligns the text
+                    </td>
+                </tr>
+                <tr>
+                    <td>tr</td>
+                    <td>
+                        tr:hover {<br>
+                            background-color: powderblue;<br>
+                            }
+                    </td>
+                    <td>Sets the background colour to change when the mouse hovers over the row.</td>
+                </tr>
+                <tr>
+                    <td>td</td>
+                    <td>
+                        {<br>
+                            border: 2px solid grey;<br>
+                            padding: 4px;<br>
+                        }
+                    </td>
+                    <td>
+                        Applies a border to every cell.<br>
+                        Pads the top and bottom of the text in every cell.
+                    </td>
+                </tr>
+                <tr>
+                    <td>.class</td>
+                    <td>
+                        {<br>
+                            background-color: dimgray;<br>
+                            color: white;<br>
+                            font-family: Georgia, 'Times New Roman', Times, serif;<br>
+                        }
+                    </td>
+                    <td>
+                        Styles the selected class in a particular way.
+                    </td>
+                </tr>
+                <tr>
+                    <td>#id</td>
+                    <td>
+                        {<br>
+                            font-size: 40px;<br>
+                            font-family: cursive;<br>
+                            font-style: italic;<br>
+                            color: antiquewhite;<br>
+                            text-shadow: -1px 0 black;<br>
+                        }
+                    </td>
+                    <td>
+                        Styles the selected id in a particular way.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+</html>

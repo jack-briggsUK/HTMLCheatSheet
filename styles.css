@@ -1,0 +1,52 @@
+html {
+    background-color: mediumseagreen;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    background-image: url(./header-02-compressor-1140x484.jpeg);
+    color: powderblue;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+h2 {
+    background-color: powderblue;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: skyblue;
+    text-align: center;
+}
+
+tbody {
+    background-color: azure;
+}
+
+tr:hover {
+    background-color: powderblue;
+}
+
+td {
+    border: 2px solid grey;
+    padding: 4px;
+}
+
+.code {
+    background-color: dimgray;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#Emphasize {
+    font-size: 40px;
+    font-family: cursive;
+    font-style: italic;
+    color: antiquewhite;
+    text-shadow: -1px 0 black;
+}
